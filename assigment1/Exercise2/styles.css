@@ -1,0 +1,277 @@
+/* General reset for consistent styling */
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Base styling for the entire website */
+html, body {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 ;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #344a5c;
+    color: #fff;
+    padding: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;           
+    justify-content: flex-start; 
+}
+.header-logo{
+    width: 10%; 
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.home-categories-aboutus{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.home-categories-aboutus ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.home-categories-aboutus li {
+    margin-left: 20px; 
+}
+
+.home-categories-aboutus a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    position: relative; 
+    padding-bottom: 2px; 
+    transition: color 0.3s ease, padding-bottom 0.3s ease;
+}
+
+
+.home-categories-aboutus a::after {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; 
+    height: 2px;
+    background-color: transparent; 
+    transition: background-color 0.3s ease, bottom 0.3s ease;
+}
+
+
+.home-categories-aboutus a:hover {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+
+.home-categories-aboutus a:hover::after {
+    background-color: #ffffff; 
+    bottom: -5px; 
+}
+
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    
+   
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto; 
+    border-radius: 5px;
+    
+}
+
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Text and Paragraphs */
+p {
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
+/* Table of Contents */
+ul {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+ul li a {
+    color: #4789d4;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories-images{
+    width: 400px; 
+    height: 250px;
+    border-radius: 5px;
+}
+
+.prof-pic{
+    width: 200px; 
+    height: 250px;
+    border-radius: 5px;
+}
+
+/*aboutus styling*/
+
+.profile {
+    display: flex;
+    justify-content: space-between; 
+    gap: 2rem;
+}
+
+/* Each profile section */
+.profile-info { 
+    width:45%;
+    text-align: center; 
+}
+
+/* Profile picture styling */
+.prof-pic {
+    width: 200px;       
+    height: 200px;      
+    object-fit: cover;  
+    margin: 1rem auto 1rem;
+    border-radius: 50%; 
+    
+}
+
+/* Footer styling */
+footer {
+    background-color: #344a5c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Link styling */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Video styling */
+video {
+    max-width: 100%;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
