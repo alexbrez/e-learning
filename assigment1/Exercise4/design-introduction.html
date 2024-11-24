@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Design Patterns and Principles lecture">
+    <title>Introduction to Design Patterns and Principles - OPALearning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class ="header-content">
+            <img src="images/OPALearning logo.png" alt="OPALearning banner" class="header-logo">
+            <h1>OPALearning</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav class="home-categories-aboutus">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main class="main-content">
+        <div class="video-container">
+            <h2>Introduction to Design Patterns and Principles</h2>
+            <div class="video-and-info">
+                <div class="video-box">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mE3qTp1TEbg?si=D-TT8-_WejFQUBZ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                    <div class="info-box">
+                        <p><strong>Instructor:</strong> Geekific</p>
+                        <p><strong>Rating:</strong> 2021</p>
+                        <p><strong>Year of Recording:</strong> 2021</p>
+                    </div>
+            </div>
+                <div class="summary-box">
+                    <h3>Summary</h3>
+                    <p>If you’re in the computer science domain, you definitely have heard of design patterns before, or even used a few patterns in practice with or without your knowledge. In this video we attempt to answer: What are design patterns? Why were they created? and what is actually the main purpose behind them?</p>
+                </div>
+            
+            <a href="oodesign.html">Back to Object-Oriented Design</a>
+        </div>
+     
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@opalearning.com">info@opalearning.com</a></p>
+       
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.home-categories-aboutus');
+            navMenu.classList.toggle('active'); 
+        }
+
+    </script>
+</body>
+</html>
