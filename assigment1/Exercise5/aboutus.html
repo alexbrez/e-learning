@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the development team of the OPALearning Platform">
+    <title>About Us - OPALearning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class ="header-content">
+            <img src="images/OPALearning logo.png" alt="OPALearning banner" class="header-logo">
+            <h1>OPALearning</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav class="home-categories-aboutus">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>About Us</h2>
+        <section class="profile">
+           
+                <div class="profile-info">
+                    <h3>Alex Brezas</h3>
+                    <img src="images/alex-pic.jpg" alt="Alex Brezas" class="prof-pic">
+                    <p><b>Alex</b> is a student at AUEB and passionate about web development.</p>
+                </div>
+            
+                <div class="profile-info">
+                    <h3>Spyros Kaldis</h3>
+                    <img src="images/robot02_90810.png" alt="Spyros Kaldis" class="prof-pic">
+                    <p><b>Spyros</b> is a student at AUEB and passionate about web development.</p>
+                </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@opalearning.com">info@opalearning.com</a></p>
+    
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.home-categories-aboutus');
+            navMenu.classList.toggle('active'); 
+        }
+
+    </script>
+</body>
+</html>
